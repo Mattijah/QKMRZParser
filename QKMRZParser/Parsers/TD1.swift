@@ -1,5 +1,5 @@
 //
-//  td1.swift
+//  TD1.swift
 //  QKMRZParser
 //
 //  Created by Matej Dorcak on 14/10/2018.

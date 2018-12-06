@@ -1,5 +1,5 @@
 //
-//  td2.swift
+//  TD2.swift
 //  QKMRZParser
 //
 //  Created by Matej Dorcak on 14/10/2018.
