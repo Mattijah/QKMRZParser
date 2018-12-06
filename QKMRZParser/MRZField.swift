@@ -8,7 +8,7 @@
 import Foundation
 
 enum MRZFieldType {
-    case documentType, countryCode, names, documentNumber, nationality, birthDate, sex, expiryDate, personalNumber, optionalData, hash
+    case documentType, countryCode, names, documentNumber, nationality, birthdate, sex, expiryDate, personalNumber, optionalData, hash
 }
 
 struct MRZField {
