@@ -9,5 +9,5 @@ Pod::Spec.new do |s|
   s.source_files  = "QKMRZParser/**/*.{swift}"
   s.frameworks    = "Foundation"
   s.ios.deployment_target = "9.0"
-  s.swift_version = "4.0"
+  s.swift_version = "5.0"
 end
