@@ -84,8 +84,9 @@ class MRZFieldFormatter {
         guard CharacterSet.decimalDigits.isSuperset(of: CharacterSet(charactersIn: string)) else {
             return nil
         }
-        
-        let currentYear = Calendar.current.component(.year, from: Date()) - 2000
+
+        let calendar = Calendar(identifier: .gregorian)
+        let currentYear = calendar.component(.year, from: Date()) - 2000
         let parsedYear = Int(string.substring(0, to: 1))!
         let centennial = (parsedYear > currentYear) ? "19" : "20"
         
