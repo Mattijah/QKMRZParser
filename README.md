@@ -1,3 +1,4 @@
+[![SwiftPackageSupport](https://img.shields.io/badge/Swift_Package_Index-red?logo=swift&logoColor=white)](https://swiftpackageindex.com/Mattijah/QKMRZParser)
 [![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat)](https://developer.apple.com/swift/)
 [![Git](https://img.shields.io/badge/GitHub-Mattijah-blue.svg?style=flat)](https://github.com/Mattijah)
 
@@ -16,7 +17,7 @@ Parses MRZ (Machine Readable Zone) from identity documents.
 
 ## Installation
 
-QKMRZParser is available through CocoaPods. To install it, simply add the following line to your Podfile:
+QKMRZParser is available through **CocoaPods** and the **Swift Package Manager**. To install it via CocoaPods simply add the following line to your Podfile:
 
 ```ruby
 pod 'QKMRZParser'
