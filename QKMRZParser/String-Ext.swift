@@ -16,6 +16,10 @@ extension String {
 
 // MARK: - Generic
 extension String {
+    var nilIfEmpty: String? {
+        return isEmpty ? nil : self
+    }
+
     func replace(_ target: String, with: String) -> String {
         return replacingOccurrences(of: target, with: with, options: .literal, range: nil)
     }

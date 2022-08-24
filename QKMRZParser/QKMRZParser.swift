@@ -11,7 +11,7 @@ public class QKMRZParser {
     let formatter: MRZFieldFormatter
     
     enum MRZFormat: Int {
-        case td1, td2, td3, invalid
+        case td1, td2, td3, frenchID, invalid
     }
     
     public init(ocrCorrection: Bool = false) {
@@ -29,6 +29,8 @@ public class QKMRZParser {
             return TD2(from: mrzLines, using: formatter).result
         case .td3:
             return TD3(from: mrzLines, using: formatter).result
+        case .frenchID:
+            return FrenchID(from: mrzLines, using: formatter).result
         case .invalid:
             return nil
         }
@@ -43,13 +45,16 @@ public class QKMRZParser {
         switch mrzLines.count {
         case 2:
             let lineLength = uniformedLineLength(for: mrzLines)
-            let possibleFormats = [MRZFormat.td2: TD2.lineLength, .td3: TD3.lineLength]
-            
-            for (format, requiredLineLength) in possibleFormats where lineLength == requiredLineLength {
-                return format
+
+            switch lineLength {
+            case TD2.lineLength, FrenchID.lineLength: // Both have an identical lineLength
+                let isFrenchID = FrenchID.validate(mrzLines: mrzLines)
+                return isFrenchID ? .frenchID : .td2
+            case TD3.lineLength:
+                return .td3
+            default:
+                return .invalid
             }
-            
-            return .invalid
         case 3:
             return (uniformedLineLength(for: mrzLines) == TD1.lineLength) ? .td1 : .invalid
         default:

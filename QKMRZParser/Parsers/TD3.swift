@@ -34,7 +34,7 @@ class TD3 {
     lazy var result: QKMRZResult = {
         let (surnames, givenNames) = names.value as! (String, String)
         
-        return QKMRZResult(
+        return .genericDocument(.init(
             documentType: documentType.value as! String,
             countryCode: countryCode.value as! String,
             surnames: surnames,
@@ -46,13 +46,12 @@ class TD3 {
             expiryDate: expiryDate.value as! Date?,
             personalNumber: personalNumber.value as! String,
             personalNumber2: nil,
-            
             isDocumentNumberValid: documentNumber.isValid!,
             isBirthdateValid: birthdate.isValid!,
             isExpiryDateValid: expiryDate.isValid!,
             isPersonalNumberValid: personalNumber.isValid,
             allCheckDigitsValid: allCheckDigitsValid
-        )
+        ))
     }()
     
     init(from mrzLines: [String], using formatter: MRZFieldFormatter) {

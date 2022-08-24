@@ -14,6 +14,7 @@ Parses MRZ (Machine Readable Zone) from identity documents.
 * TD3
 * MRV-A
 * MRV-B
+* French ID
 
 ## Installation
 
@@ -44,7 +45,7 @@ print(result)
 - [ ] Tests
 - [ ] Documentation
 - [ ] Support Swiss Driving License
-- [ ] Support French national ID
+- [x] Support French national ID
 - [ ] Improve OCR correction
 - [ ] Latin transliteration
 - [ ] Arabic transliteration

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		128E9B7928B15A7B0091B4CA /* FrenchID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128E9B7828B15A7B0091B4CA /* FrenchID.swift */; };
 		12E405D521736C4A0081A7C8 /* QKMRZParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E405D321736C4A0081A7C8 /* QKMRZParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		12E405DC21736F750081A7C8 /* QKMRZParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E405DB21736F750081A7C8 /* QKMRZParser.swift */; };
 		12E405DF217376160081A7C8 /* TD1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E405DE217376160081A7C8 /* TD1.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		128E9B7828B15A7B0091B4CA /* FrenchID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrenchID.swift; sourceTree = "<group>"; };
 		12E405D021736C4A0081A7C8 /* QKMRZParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QKMRZParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E405D321736C4A0081A7C8 /* QKMRZParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QKMRZParser.h; sourceTree = "<group>"; };
 		12E405D421736C4A0081A7C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				12E405DE217376160081A7C8 /* TD1.swift */,
 				12E405E0217376870081A7C8 /* TD2.swift */,
 				12E405E2217376920081A7C8 /* TD3.swift */,
+				128E9B7828B15A7B0091B4CA /* FrenchID.swift */,
 			);
 			path = Parsers;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				12E405DC21736F750081A7C8 /* QKMRZParser.swift in Sources */,
 				12E405DF217376160081A7C8 /* TD1.swift in Sources */,
 				12E405E5217379220081A7C8 /* String-Ext.swift in Sources */,
+				128E9B7928B15A7B0091B4CA /* FrenchID.swift in Sources */,
 				12E405E1217376870081A7C8 /* TD2.swift in Sources */,
 				12E405E3217376920081A7C8 /* TD3.swift in Sources */,
 			);

@@ -46,16 +46,16 @@ class MRZFieldFormatter {
             return sex(from: string)
         case .expiryDate:
             return expiryDate(from: string)
-        case .documentType, .documentNumber, .countryCode, .nationality, .personalNumber, .optionalData, .hash:
+        default:
             return text(from: string)
         }
     }
     
     func correct(_ string: String, fieldType: MRZFieldType) -> String {
         switch fieldType {
-        case .birthdate, .expiryDate, .hash: // TODO: Check correction of dates (month & day)
+        case .birthdate, .expiryDate, .hash, .numeric: // TODO: Check correction of dates (month & day)
             return replaceLetters(in: string)
-        case .names, .documentType, .countryCode, .nationality: // TODO: Check documentType, countryCode and nationality against possible (allowed) values
+        case .names, .documentType, .countryCode, .nationality, .alphabetic: // TODO: Check documentType, countryCode and nationality against possible (allowed) values
             return replaceDigits(in: string)
         case .sex: // TODO: Improve correction (take into account "M" & "<" too)
             return string.replace("P", with: "F")
@@ -107,7 +107,7 @@ class MRZFieldFormatter {
     private func text(from string: String) -> String {
         return string.trimmingFillers().replace("<", with: " ")
     }
-    
+
     // MARK: Utils
     private func replaceDigits(in string: String) -> String {
         return string

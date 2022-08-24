@@ -9,7 +9,23 @@ import Foundation
 
 // MARK: - MRZFieldType
 enum MRZFieldType {
-    case documentType, countryCode, names, documentNumber, nationality, birthdate, sex, expiryDate, personalNumber, optionalData, hash
+    // MARK: Type Related
+    case documentType
+    case countryCode
+    case names
+    case documentNumber
+    case nationality
+    case birthdate
+    case sex
+    case expiryDate
+    case personalNumber
+    case optionalData
+    case hash
+
+    // MARK: Generic
+    case alphabetic
+    case alphanumeric
+    case numeric
 }
 
 // MARK: - MRZField
