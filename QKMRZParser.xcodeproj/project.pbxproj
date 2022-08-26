@@ -15,7 +15,7 @@
 		12E405DF217376160081A7C8 /* Parser+TD1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E405DE217376160081A7C8 /* Parser+TD1.swift */; };
 		12E405E1217376870081A7C8 /* Parser+TD2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E405E0217376870081A7C8 /* Parser+TD2.swift */; };
 		12E405E3217376920081A7C8 /* Parser+TD3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E405E2217376920081A7C8 /* Parser+TD3.swift */; };
-		12E405E5217379220081A7C8 /* String-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E405E4217379220081A7C8 /* String-Ext.swift */; };
+		12E405E5217379220081A7C8 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E405E4217379220081A7C8 /* String+Extensions.swift */; };
 		12E405E721737A3D0081A7C8 /* MRZField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E405E621737A3D0081A7C8 /* MRZField.swift */; };
 		12E405E921737B450081A7C8 /* MRZFieldFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E405E821737B450081A7C8 /* MRZFieldFormatter.swift */; };
 		12E4061021737CD30081A7C8 /* QKMRZResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E4060F21737CD30081A7C8 /* QKMRZResult.swift */; };
@@ -32,7 +32,7 @@
 		12E405DE217376160081A7C8 /* Parser+TD1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Parser+TD1.swift"; sourceTree = "<group>"; };
 		12E405E0217376870081A7C8 /* Parser+TD2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Parser+TD2.swift"; sourceTree = "<group>"; };
 		12E405E2217376920081A7C8 /* Parser+TD3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Parser+TD3.swift"; sourceTree = "<group>"; };
-		12E405E4217379220081A7C8 /* String-Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String-Ext.swift"; sourceTree = "<group>"; };
+		12E405E4217379220081A7C8 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		12E405E621737A3D0081A7C8 /* MRZField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRZField.swift; sourceTree = "<group>"; };
 		12E405E821737B450081A7C8 /* MRZFieldFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRZFieldFormatter.swift; sourceTree = "<group>"; };
 		12E4060F21737CD30081A7C8 /* QKMRZResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKMRZResult.swift; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 				12E4060F21737CD30081A7C8 /* QKMRZResult.swift */,
 				12E405E821737B450081A7C8 /* MRZFieldFormatter.swift */,
 				12E405E621737A3D0081A7C8 /* MRZField.swift */,
-				12E405E4217379220081A7C8 /* String-Ext.swift */,
+				12E405E4217379220081A7C8 /* String+Extensions.swift */,
 				12E405D321736C4A0081A7C8 /* QKMRZParser.h */,
 				12E405D421736C4A0081A7C8 /* Info.plist */,
 			);
@@ -179,7 +179,7 @@
 				12E405E921737B450081A7C8 /* MRZFieldFormatter.swift in Sources */,
 				12E405DC21736F750081A7C8 /* QKMRZParser.swift in Sources */,
 				12E405DF217376160081A7C8 /* Parser+TD1.swift in Sources */,
-				12E405E5217379220081A7C8 /* String-Ext.swift in Sources */,
+				12E405E5217379220081A7C8 /* String+Extensions.swift in Sources */,
 				128E9B7928B15A7B0091B4CA /* Parser+FrenchID.swift in Sources */,
 				12E405E1217376870081A7C8 /* Parser+TD2.swift in Sources */,
 				12E405E3217376920081A7C8 /* Parser+TD3.swift in Sources */,

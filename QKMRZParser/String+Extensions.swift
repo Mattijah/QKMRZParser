@@ -1,5 +1,5 @@
 //
-//  String-Ext.swift
+//  String+Extensions.swift
 //  QKMRZParser
 //
 //  Created by Matej Dorcak on 14/10/2018.
