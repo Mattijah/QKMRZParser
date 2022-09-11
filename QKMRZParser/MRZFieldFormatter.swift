@@ -8,9 +8,9 @@
 import Foundation
 
 class MRZFieldFormatter {
-    let ocrCorrection: Bool
+    private let ocrCorrection: Bool
     
-    fileprivate let dateFormatter: DateFormatter = {
+    private let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyyMMdd"
         formatter.locale = Locale(identifier: "en_US_POSIX")
