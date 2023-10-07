@@ -33,7 +33,7 @@ extension Parsers {
             let finalCheckDigit = formatter.field(.hash, from: secondLine, at: 29, length: 1)
 
             // MARK: Line #3
-            let names = formatter.field(.names, from: thirdLine, at: 0, length: 29)
+            let names = formatter.field(.names, from: thirdLine, at: 0, length: 30)
             let (surnames, givenNames) = names.value as! (String, String)
 
             // MARK: Check Digit
